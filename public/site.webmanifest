@@ -1,0 +1,14 @@
+{
+  "name": "Anthony Faria Dos Santos | Portfolio",
+  "short_name": "AF.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0b0b12",
+  "background_color": "#0b0b12",
+  "display": "standalone"
+}

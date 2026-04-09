@@ -1,0 +1,428 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #0b0b12;
+  --foreground: #f5f5f7;
+  --card: rgba(30, 30, 42, 0.5);
+  --card-foreground: #f5f5f7;
+  --popover: #0f0f18;
+  --popover-foreground: #f5f5f7;
+  --primary: #6ee7b7;
+  --primary-foreground: #06060a;
+  --secondary: #818cf8;
+  --secondary-foreground: #06060a;
+  --muted: #1e1e2a;
+  --muted-foreground: #8b8b99;
+  --accent: #fbbf24;
+  --accent-foreground: #06060a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f5f5f7;
+  --border: #1e1e2a;
+  --input: #1e1e2a;
+  --ring: #6ee7b7;
+  --radius: 1rem;
+  
+  /* Custom colors */
+  --emerald: #6ee7b7;
+  --indigo: #818cf8;
+  --amber: #fbbf24;
+  --deep-bg: #0b0b12;
+  --text-muted: #8b8b99;
+}
+
+@theme inline {
+  --font-sans: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
+  --font-serif: 'Syne', 'Syne Fallback', serif;
+  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-emerald: var(--emerald);
+  --color-indigo: var(--indigo);
+  --color-amber: var(--amber);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-[#0b0b12] text-foreground;
+    overflow-x: hidden;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-blend-mode: overlay;
+    background-size: 200px 200px;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+/* Glass morphism card */
+.glass-card {
+  @apply backdrop-blur-xl bg-white/[0.03] border border-white/[0.08] rounded-2xl;
+  position: relative;
+}
+
+/* Glow border effect */
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--emerald), var(--indigo), var(--amber));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+@media (pointer: fine) {
+  .glow-border:hover::before {
+    opacity: 0.6;
+  }
+  .glow-border:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Rotating rainbow border for open source projects */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.rainbow-border {
+  position: relative;
+}
+
+.rainbow-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--angle),
+    #6ee7b7, #818cf8, #fbbf24, #f472b6, #6ee7b7
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* Desktop only (fine pointer = mouse): hover activates rainbow border.
+   pointer:coarse covers touch devices including Fold 6 which reports hover:hover due to S-Pen. */
+@media (pointer: fine) {
+  .rainbow-border:hover::before {
+    opacity: 1;
+    animation: rotate-border 2s linear forwards;
+  }
+}
+/* Touch (pointer:coarse): no sticky hover, only mobile-focus-active controls it */
+
+@keyframes rotate-border {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
+/* Scan line effect for skill cards */
+.scan-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-line::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(110, 231, 183, 0.03) 50%,
+    transparent 100%
+  );
+  transform: translateY(-100%);
+  animation: scan 4s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0%, 100% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+}
+
+/* Link underline slide animation */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Dot grid pattern */
+.dot-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(139, 139, 153, 0.15) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Gradient mesh for hero */
+.gradient-mesh {
+  background: 
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(110, 231, 183, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(129, 140, 248, 0.1), transparent);
+}
+
+/* Emerald glow */
+.emerald-glow {
+  box-shadow: 0 0 40px rgba(110, 231, 183, 0.3), 0 0 80px rgba(110, 231, 183, 0.15);
+}
+
+/* Badge styles */
+.badge-glass {
+  @apply bg-white/[0.06] border border-white/10 text-gray-300 backdrop-blur-sm;
+}
+
+/* Timeline connector */
+.timeline-connector {
+  @apply absolute left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-emerald via-indigo to-amber;
+}
+
+/* Bouncing animation */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Subtle background gradient zones to break monotone darkness */
+.bg-zone-1 {
+  background: linear-gradient(180deg, transparent 0%, rgba(110, 231, 183, 0.02) 50%, transparent 100%);
+}
+.bg-zone-2 {
+  background: linear-gradient(180deg, transparent 0%, rgba(129, 140, 248, 0.02) 50%, transparent 100%);
+}
+.bg-zone-3 {
+  background: linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.015) 50%, transparent 100%);
+}
+
+/* Mobile: rainbow border on centered card via JS class */
+/* Mobile focus: rainbow border animation */
+.mobile-focus-active::before {
+  opacity: 1 !important;
+  animation: rotate-border 2s linear forwards !important;
+}
+
+.mobile-focus-active .github-icon-mobile {
+  color: #6ee7b7 !important;
+  transform: rotate(39deg);
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Site button: light up and rotate icon on mobile focus */
+.mobile-focus-active .site-btn-mobile {
+  color: #6ee7b7 !important;
+  border-color: rgba(110, 231, 183, 0.3) !important;
+  background: rgba(110, 231, 183, 0.1) !important;
+}
+.mobile-focus-active .site-btn-mobile svg {
+  transform: rotate(12deg);
+  color: #fff;
+}
+
+.mobile-focus-active {
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.3s ease;
+}
+
+/* Scroll performance: promote layers for animated sections */
+@media (pointer: coarse) {
+  .glass-card {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+  section {
+    contain: layout style;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   FOLDABLE SYSTEM
+   Priority: CSS segments > JS fallback > standard
+   ═══════════════════════════════════════════ */
+
+/* ── 1. Custom properties with fallbacks ── */
+:root {
+  --fold-left-width: 1fr;
+  --fold-right-width: 1fr;
+  --fold-hinge-width: 0px;
+  --fold-pane-gap: clamp(24px, 4vw, 40px);
+  --fold-pane-padding: clamp(12px, 2vw, 20px);
+  --fold-max-content-width: 100%;
+  --fold-axis-offset: 0px;
+}
+
+/* ── 2. PRIORITY: Real segment-aware mode ── */
+/* horizontal-viewport-segments is a media feature, not a CSS property.
+   Use @media directly, never @supports. */
+@media (horizontal-viewport-segments: 2) {
+  :root {
+    --fold-left-width: env(viewport-segment-width 0 0, 1fr);
+    --fold-right-width: env(viewport-segment-width 1 0, 1fr);
+    --fold-hinge-width: calc(env(viewport-segment-left 1 0, 50%) - env(viewport-segment-right 0 0, 50%));
+    --fold-pane-gap: calc(var(--fold-hinge-width) + 16px);
+    --fold-pane-padding: clamp(12px, 2.5vw, 24px);
+    --fold-axis-offset: calc(var(--fold-hinge-width) / 2 + 8px);
+  }
+
+  /* Segment-aware two-pane: uses real segment widths */
+  .fold-two-pane {
+    display: grid !important;
+    grid-template-columns: var(--fold-left-width) var(--fold-right-width);
+    column-gap: var(--fold-pane-gap);
+    padding-inline: var(--fold-pane-padding);
+    align-items: start;
+  }
+
+  /* Modal on right segment */
+  .fold-modal-container { justify-content: flex-end; }
+  .fold-modal-panel {
+    max-width: var(--fold-right-width);
+    margin-right: 8px;
+  }
+
+  /* Mono sections: stay clear of hinge */
+  .fold-section-single {
+    max-width: calc(100% - var(--fold-hinge-width) - 32px);
+    margin-inline: auto;
+  }
+}
+
+/* ── 3. FALLBACK: JS-detected fold (no segments API) ── */
+[data-fold="confirmed"] {
+  --fold-pane-gap: clamp(40px, 6vw, 72px);
+  --fold-axis-offset: 8px;
+}
+[data-fold="adaptive-two-pane"] {
+  --fold-axis-offset: 4px;
+}
+[data-fold="adaptive-two-pane"] {
+  --fold-pane-gap: clamp(24px, 4vw, 40px);
+}
+
+/* Fallback two-pane grid (when segments API not available) */
+[data-fold] .fold-two-pane {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--fold-pane-gap);
+  padding-inline: var(--fold-pane-padding);
+  align-items: start;
+}
+
+/* ── 4. Pane utilities ── */
+.fold-left-pane,
+.fold-right-pane {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.fold-left-pane {
+  padding-right: var(--fold-axis-offset);
+}
+.fold-right-pane {
+  padding-left: var(--fold-axis-offset);
+}
+
+/* ── 5. Modal fold positioning ── */
+@media (vertical-viewport-segments: 2) {
+  .fold-modal-container { align-items: flex-start; padding-top: 8px; }
+  .fold-modal-panel { max-height: calc(env(viewport-segment-height 0 0, 50vh) - 16px); }
+}
+
+/* ── 6. Cover screen compact (~280px) ── */
+@media (max-width: 300px) {
+  .font-serif { font-size: 0.875rem; }
+  .glass-card { padding: 0.75rem; }
+  .section-number { font-size: 0.625rem; }
+}
+
+/* ── 7. Fold inner portrait grid hint (~717px) ── */
+@media (min-width: 650px) and (max-width: 750px) {
+  .grid.lg\:grid-cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Section number styling */
+.section-number {
+  @apply font-mono text-sm tracking-wider;
+  background: linear-gradient(135deg, var(--emerald), var(--indigo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

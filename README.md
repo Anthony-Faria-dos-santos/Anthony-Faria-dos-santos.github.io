@@ -48,7 +48,7 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-anthony--faria--dos--santos.github.io-6ee7b7?style=for-the-badge&logo=googlechrome&logoColor=6ee7b7&labelColor=0b0b12)](https://anthony-faria-dos-santos.github.io](https://afds-wine.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-anthony--faria--dos--santos.github.io-6ee7b7?style=for-the-badge&logo=googlechrome&logoColor=6ee7b7&labelColor=0b0b12)](https://afds-wine.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-818cf8?style=for-the-badge&logo=linkedin&logoColor=818cf8&labelColor=0b0b12)](https://linkedin.com/in/anthony-faria-dos-santos)
 [![Email](https://img.shields.io/badge/Email-Contact-fbbf24?style=for-the-badge&logo=gmail&logoColor=fbbf24&labelColor=0b0b12)](mailto:Anthony.devfsjs@gmail.com)
 

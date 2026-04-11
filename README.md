@@ -1,122 +1,169 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
-  <defs>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:1">
-        <animate attributeName="stop-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" style="stop-color:#818cf8;stop-opacity:1">
-        <animate attributeName="stop-opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1">
-        <animate attributeName="stop-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <rect width="900" height="200" fill="#0b0b12"/>
-  <rect x="50" y="95" width="800" height="2" fill="url(#glowGrad)" rx="1">
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
-  </rect>
-  <text x="450" y="70" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="38" font-weight="bold" filter="url(#glow)">
-    Anthony Faria Dos Santos
-    <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze"/>
-  </text>
-  <text x="450" y="130" text-anchor="middle" fill="#8b8b99" font-family="monospace" font-size="18">
-    <tspan>
-      <animate attributeName="opacity" values="0;0;1" dur="2s" fill="freeze"/>
-    </tspan>$ <tspan fill="#818cf8">Fullstack JS</tspan> · <tspan fill="#6ee7b7">Cybersecurite</tspan> · <tspan fill="#fbbf24">Systemes &amp; Reseaux</tspan><tspan fill="#6ee7b7" font-weight="bold">
-      <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
-    _</tspan>
-  </text>
-  <text x="450" y="165" text-anchor="middle" fill="#1e1e2a" font-family="monospace" font-size="12">
-    <animate attributeName="fill" values="#1e1e2a;#8b8b99" dur="3s" fill="freeze"/>
-    Alternant DSNS | ESIEE-IT | En recherche pour septembre 2026
-  </text>
-  <circle cx="80" cy="100" r="3" fill="#6ee7b7">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="820" cy="100" r="3" fill="#818cf8">
-    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
-  </circle>
-</svg>
-
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-anthony--faria--dos--santos.github.io-6ee7b7?style=for-the-badge&logo=googlechrome&logoColor=6ee7b7&labelColor=0b0b12)](https://afds-wine.vercel.app/)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Anthony%20Faria%20Dos%20Santos&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Fullstack%20JS%20%7C%20Cybers%C3%A9curit%C3%A9%20%7C%20ESIEE-IT%202026&descAlignY=58&descSize=17" />
+
+</div>
+<br/>
+<!-- Liens sociaux — une seule ligne aérée -->
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-afds--wine.vercel.app-6ee7b7?style=for-the-badge&logo=vercel&logoColor=6ee7b7&labelColor=0b0b12)](https://afds-wine.vercel.app/)
+&nbsp;&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-818cf8?style=for-the-badge&logo=linkedin&logoColor=818cf8&labelColor=0b0b12)](https://linkedin.com/in/anthony-faria-dos-santos)
+&nbsp;&nbsp;
 [![Email](https://img.shields.io/badge/Email-Contact-fbbf24?style=for-the-badge&logo=gmail&logoColor=fbbf24&labelColor=0b0b12)](mailto:Anthony.devfsjs@gmail.com)
 
 </div>
 
 ---
 
-## A propos
+## 👤 À propos
 
 ```yaml
-nom: Anthony Faria Dos Santos
-age: 39 ans
-localisation: Paris / Ile-de-France / Oise
-mobilite: Permis B, vehicule
-statut: Reconversion professionnelle apres 18 ans en electrotechnique industrielle
-formation: Bachelor 3 DSNS (admis) → Master E3IN Expert Cybersecurite | ESIEE-IT
-recherche: Alternance 1 an (rythme 1 sem / 1 sem) a partir de septembre 2026
-domaines: Developpement securise · Blue Team / SOC · Systemes & Reseaux
+nom:        Anthony Faria Dos Santos
+age:        39 ans
+localite:   Paris / Île-de-France / Oise
+mobilite:   Permis B, véhicule
+statut:     Reconversion après 18 ans en électrotechnique industrielle
+formation:  Bachelor 3 DSNS → Master E3IN Expert Cybersécurité | ESIEE-IT
+recherche:  Alternance 1 an (1 sem / 1 sem) à partir de septembre 2026
+domaines:   Développement sécurisé · Blue Team / SOC · Systèmes & Réseaux
 ```
 
-A 39 ans, apres 18 ans sur le terrain en electrotechnique industrielle, j'ai pris l'habitude de comprendre les choses en m'y confrontant directement. Chaque projet renforce ma comprehension du metier, et chaque obstacle renforce ma determination.
-
-Reconnu **RQTH**, en m'embauchant en contrat d'apprentissage, votre entreprise beneficie des aides maximales a l'embauche, sans limite d'age ni de niveau.
+À 39 ans, après 18 ans sur le terrain en électrotechnique industrielle, j'ai l'habitude de comprendre les choses en m'y confrontant directement. Reconnu **RQTH** — en m'embauchant, votre entreprise bénéficie des **aides maximales à l'embauche**, sans limite d'âge ni de niveau.
 
 ---
 
-## Stack technique
+## 🛡️ Cybersécurité
+
+<div align="center">
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=linux,kali,py,bash,docker,git" />
+</p>
+
+</br>
+
+<!-- Ligne 1 : détection / analyse -->
+![Suricata](https://img.shields.io/badge/Suricata-IDS%2FIPS-6ee7b7?style=flat&logoColor=white&labelColor=0b0b12)
+&nbsp;
+![Wireshark](https://img.shields.io/badge/Wireshark-Analyse-6ee7b7?style=for-the-badge&logo=wireshark&logoColor=white&labelColor=0b0b12)
+&nbsp;
+![OWASP](https://img.shields.io/badge/OWASP-Top_10-6ee7b7?style=for-the-badge&logoColor=white&labelColor=0b0b12)
+&nbsp;
+![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-6ee7b7?style=for-the-badge&logoColor=white&labelColor=0b0b12)
+
+<br/>
+
+<!-- Ligne 2 : SIEM / CTI / DFIR -->
+![ELK](https://img.shields.io/badge/ELK_Stack-SIEM-6ee7b7?style=for-the-badge&logo=elasticstack&logoColor=white&labelColor=0b0b12)
+&nbsp;
+![MISP](https://img.shields.io/badge/MISP-CTI-6ee7b7?style=for-the-badge&logoColor=white&labelColor=0b0b12)
+&nbsp;
+![TheHive](https://img.shields.io/badge/TheHive-DFIR-6ee7b7?style=for-the-badge&logoColor=white&labelColor=0b0b12)
+
+</div>
+
+## 💻 Développement
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,postgres,prisma,docker" />
+</p>
+
+## 🌐 Systèmes & Réseaux
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=linux,bash,git,cisco,gns3" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Cisco-IOS-fbbf24?style=for-the-badge&logo=cisco&logoColor=white&labelColor=0b0b12" />
+  <img src="https://img.shields.io/badge/Containerlab-fbbf24?style=for-the-badge&logoColor=white&labelColor=0b0b12" />
+  <img src="https://img.shields.io/badge/GNS3-fbbf24?style=for-the-badge&logoColor=white&labelColor=0b0b12" />
+</p>
+
+---
+
+## 🚀 Projets
+
+### 🔴 Mini SOC — Infrastructure de détection from scratch
+> Monter un SOC fonctionnel seul, de zéro, dans un lab virtualisé. Ingestion de logs réseau → corrélation → réponse à incident. Le projet qui m'a fait comprendre concrètement ce que défendre un SI veut dire.
+
+[![skillicons](https://skillicons.dev/icons?i=linux,docker,py)](.)
+
+![Suricata](https://img.shields.io/badge/Suricata-IDS-6ee7b7?style=flat&labelColor=0b0b12)
+&nbsp;
+![ELK](https://img.shields.io/badge/ELK-SIEM-6ee7b7?style=flat&logo=elasticstack&labelColor=0b0b12)
+&nbsp;
+![MISP](https://img.shields.io/badge/MISP-CTI-6ee7b7?style=flat&labelColor=0b0b12)
+&nbsp;
+![TheHive](https://img.shields.io/badge/TheHive-DFIR-6ee7b7?style=flat&labelColor=0b0b12)
+
+---
+
+### 🟣 [CVE Signal Dashboard](https://github.com/Anthony-Faria-dos-santos/cve-signal-Dashboard) — Veille CVE avec contexte
+> Lassé des flux CVE bruts, j'ai construit un dashboard qui score et filtre les vulnérabilités selon leur contexte réel. Prisma ORM + Next.js, déployé en continu.
+
+[![skillicons](https://skillicons.dev/icons?i=ts,nextjs,prisma)](.)
+
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js)
+&nbsp;
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma)
+&nbsp;
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+
+---
+
+### 🟡 [WWM Calculator](https://github.com/Anthony-Faria-dos-santos/WWM_Ultimate_calculator) — 18 400 lignes, 412 tests
+> Mon projet de fin de formation, poussé à l'extrême : CI/CD complet, couverture de tests totale. Parce qu'un code sans tests, c'est du code non terminé.
+
+[![skillicons](https://skillicons.dev/icons?i=ts,nextjs)](.)
+
+---
+
+### 🔵 [Analyse phishing MISP](https://github.com/Anthony-Faria-dos-santos/MISP-Personnal-Student-Project) — SOC analyst mindset
+> Reconstitution d'une campagne de phishing réelle, enrichissement des IOCs et partage communautaire via MISP. Mon premier vrai exercice d'analyste.
+
+![MISP](https://img.shields.io/badge/MISP-CTI-818cf8?style=flat&labelColor=0b0b12)
+&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+
+---
+
+### ⚪ [Motion Detection](https://github.com/Anthony-Faria-dos-santos/Project-Motion-Detection-System) — Pipeline CV from MOG2 to YOLO
+> Migration complète d'un pipeline de détection par soustraction de fond vers YOLO + DeepSORT. Curiosité technique pure.
+
+[![skillicons](https://skillicons.dev/icons?i=py)](.)
+
+![YOLO](https://img.shields.io/badge/YOLOv8-detection-fbbf24?style=flat&labelColor=0b0b12)
+&nbsp;
+![DeepSORT](https://img.shields.io/badge/DeepSORT-tracking-fbbf24?style=flat&labelColor=0b0b12)
+---
+
+## 🎓 Certifications & Objectifs
 
 <table>
 <tr>
-<td valign="top" width="33%">
+<td width="50%" valign="top">
 
-**Cybersecurite**
+**🔄 En préparation — Été 2026**
 
-![Suricata](https://img.shields.io/badge/Suricata-IDS/IPS-6ee7b7?style=flat-square&logoColor=6ee7b7&labelColor=0b0b12)
-![ELK](https://img.shields.io/badge/ELK_Stack-SIEM-6ee7b7?style=flat-square&logo=elasticstack&logoColor=6ee7b7&labelColor=0b0b12)
-![MISP](https://img.shields.io/badge/MISP-CTI-6ee7b7?style=flat-square&logoColor=6ee7b7&labelColor=0b0b12)
-![TheHive](https://img.shields.io/badge/TheHive-DFIR-6ee7b7?style=flat-square&logoColor=6ee7b7&labelColor=0b0b12)
-![OWASP](https://img.shields.io/badge/OWASP-Top_10-6ee7b7?style=flat-square&logoColor=6ee7b7&labelColor=0b0b12)
-![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-6ee7b7?style=flat-square&logoColor=6ee7b7&labelColor=0b0b12)
-![Kali](https://img.shields.io/badge/Kali-Linux-6ee7b7?style=flat-square&logo=kalilinux&logoColor=6ee7b7&labelColor=0b0b12)
-![Wireshark](https://img.shields.io/badge/Wireshark-Analyse-6ee7b7?style=flat-square&logo=wireshark&logoColor=6ee7b7&labelColor=0b0b12)
+![CCNA](https://img.shields.io/badge/Cisco-CCNA_200--301-6ee7b7?style=flat&logo=cisco&logoColor=white&labelColor=0b0b12)
+
+Réseaux, routage, switching, sécurité périmétrique.
+Préparation autonome + Packet Tracer.
+
+[![Notes](https://img.shields.io/badge/Mes_notes-GitHub-818cf8?style=flat&logo=github&labelColor=0b0b12)](https://github.com/Anthony-Faria-dos-santos/CCNA-exam-prep-support-material)
 
 </td>
-<td valign="top" width="33%">
+<td width="50%" valign="top">
 
-**Developpement**
+**🎯 Objectif 2027**
 
-![TypeScript](https://img.shields.io/badge/TypeScript-818cf8?style=flat-square&logo=typescript&logoColor=818cf8&labelColor=0b0b12)
-![JavaScript](https://img.shields.io/badge/JavaScript-818cf8?style=flat-square&logo=javascript&logoColor=818cf8&labelColor=0b0b12)
-![React](https://img.shields.io/badge/React-818cf8?style=flat-square&logo=react&logoColor=818cf8&labelColor=0b0b12)
-![Next.js](https://img.shields.io/badge/Next.js-818cf8?style=flat-square&logo=nextdotjs&logoColor=818cf8&labelColor=0b0b12)
-![Node.js](https://img.shields.io/badge/Node.js-818cf8?style=flat-square&logo=nodedotjs&logoColor=818cf8&labelColor=0b0b12)
-![Python](https://img.shields.io/badge/Python-818cf8?style=flat-square&logo=python&logoColor=818cf8&labelColor=0b0b12)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-818cf8?style=flat-square&logo=postgresql&logoColor=818cf8&labelColor=0b0b12)
-![Docker](https://img.shields.io/badge/Docker-818cf8?style=flat-square&logo=docker&logoColor=818cf8&labelColor=0b0b12)
+![CCNP](https://img.shields.io/badge/Cisco-CCNP_Enterprise-818cf8?style=flat&logo=cisco&logoColor=white&labelColor=0b0b12)
 
-</td>
-<td valign="top" width="33%">
-
-**Systemes & Reseaux**
-
-![Linux](https://img.shields.io/badge/Linux-fbbf24?style=flat-square&logo=linux&logoColor=fbbf24&labelColor=0b0b12)
-![Cisco](https://img.shields.io/badge/Cisco-IOS-fbbf24?style=flat-square&logo=cisco&logoColor=fbbf24&labelColor=0b0b12)
-![Containerlab](https://img.shields.io/badge/Containerlab-fbbf24?style=flat-square&logoColor=fbbf24&labelColor=0b0b12)
-![GNS3](https://img.shields.io/badge/GNS3-fbbf24?style=flat-square&logoColor=fbbf24&labelColor=0b0b12)
-![Bash](https://img.shields.io/badge/Bash-fbbf24?style=flat-square&logo=gnubash&logoColor=fbbf24&labelColor=0b0b12)
-![Git](https://img.shields.io/badge/Git-fbbf24?style=flat-square&logo=git&logoColor=fbbf24&labelColor=0b0b12)
+Suite logique du CCNA dans le cursus Expert.
+Infrastructure réseau d'entreprise et sécurité avancée.
 
 </td>
 </tr>
@@ -124,54 +171,39 @@ Reconnu **RQTH**, en m'embauchant en contrat d'apprentissage, votre entreprise b
 
 ---
 
-## Projets
+## 📅 Parcours
 
-| | Projet | Description | Stack |
-|:-:|:-------|:-----------|:------|
-| ★ | **Mini SOC** | Infrastructure SIEM complete : detection, CTI, analyse d'incidents | `Suricata` `ELK` `MISP` `TheHive` `Docker` |
-| [![GitHub](https://img.shields.io/badge/-0b0b12?logo=github&logoColor=white&style=flat-square)](https://github.com/Anthony-Faria-dos-santos/cve-signal-Dashboard) | **CVE Signal Dashboard** | Suivi et scoring contextuel des vulnerabilites CVE | `Next.js` `Prisma` `TypeScript` |
-| [![GitHub](https://img.shields.io/badge/-0b0b12?logo=github&logoColor=white&style=flat-square)](https://github.com/Anthony-Faria-dos-santos/WWM_Ultimate_calculator) | **WWM Calculator** | 18 400 lignes, 412 tests, CI/CD | `TypeScript` `Next.js` |
-| | **Virtual Lab** | Environnement reseau multi-sites pour tests et apprentissage | `Containerlab` `Cisco IOS` `GNS3` |
-| [![GitHub](https://img.shields.io/badge/-0b0b12?logo=github&logoColor=white&style=flat-square)](https://github.com/Anthony-Faria-dos-santos/MISP-Personnal-Student-Project) | **MISP Analyse phishing** | Analyse SOC d'une campagne de phishing via MISP | `MISP` `Python` |
-| [![GitHub](https://img.shields.io/badge/-0b0b12?logo=github&logoColor=white&style=flat-square)](https://github.com/Anthony-Faria-dos-santos/Project-Motion-Detection-System) | **Motion Detection** | Migration pipeline MOG2 vers YOLO vers DeepSORT | `Python` `YOLO` `DeepSORT` |
-
----
-
-## Certifications
-
-| Certification | Statut | Ressources |
-|:-------------|:------:|:----------:|
-| ![CCNA](https://img.shields.io/badge/CCNA-200--301-6ee7b7?style=flat-square&logo=cisco&logoColor=6ee7b7&labelColor=0b0b12) | En preparation (ete 2026) | [![Notes](https://img.shields.io/badge/Notes-GitHub-818cf8?style=flat-square&logo=github&logoColor=818cf8&labelColor=0b0b12)](https://github.com/Anthony-Faria-dos-santos/CCNA-exam-prep-support-material) |
-| ![CCNP](https://img.shields.io/badge/CCNP-Enterprise-818cf8?style=flat-square&logo=cisco&logoColor=818cf8&labelColor=0b0b12) | Objectif 2027 | |
-
----
-
-## Parcours
-
-```
-2027-2029  Master E3IN Expert Cybersecurite          ESIEE-IT    (alternance 2 ans)
-2026-2027  Bachelor 3 DSNS                           ESIEE-IT    (alternance 1 an) ← admis
-2023-2024  Titre Pro Developpeur Fullstack (Bac+2)   O'Clock
-2005-2023  Electrotechnicien industriel               EJ Picardie (18 ans)
-```
+<table>
+<tr>
+<td align="center" width="130"><b>2027 → 2029</b></td>
+<td>🎯 <b>Master E3IN — Expert Cybersécurité</b><br/>ESIEE-IT · Alternance 2 ans</td>
+</tr>
+<tr>
+<td align="center"><b>2026 → 2027</b></td>
+<td>🎓 <b>Bachelor 3 DSNS — Développement Numérique Sécurisé</b><br/>ESIEE-IT · <b>Recherche d'alternance active</b> ← 📩</td>
+</tr>
+<tr>
+<td align="center"><b>2023 → 2024</b></td>
+<td>💻 <b>Titre Pro DWWM Bac+2 — Développeur Fullstack</b><br/>O'Clock · Node.js / React · 8 mois bootcamp</td>
+</tr>
+<tr>
+<td align="center"><b>2005 → 2023</b></td>
+<td>⚡ <b>Électrotechnicien industriel</b><br/>EJ Picardie · 18 ans terrain</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
-<a href="https://github.com/Anthony-Faria-dos-santos">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=Anthony-Faria-dos-santos&show_icons=true&bg_color=0b0b12&title_color=6ee7b7&text_color=8b8b99&icon_color=818cf8&border_color=1e1e2a&hide_border=false&include_all_commits=true&count_private=true"/>
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anthony-Faria-dos-santos&layout=compact&bg_color=0b0b12&title_color=6ee7b7&text_color=8b8b99&icon_color=818cf8&border_color=1e1e2a&hide_border=false"/>
-</a>
+[![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anthony-Faria-dos-santos&theme=tokyonight)](https://github.com/Anthony-Faria-dos-santos)
 
-<br><br>
+[![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Anthony-Faria-dos-santos&theme=tokyonight)](https://github.com/Anthony-Faria-dos-santos)
+&nbsp;&nbsp;
+[![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Anthony-Faria-dos-santos&theme=tokyonight)](https://github.com/Anthony-Faria-dos-santos)
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Anthony-Faria-dos-santos&background=0b0b12&border=1e1e2a&stroke=1e1e2a&ring=6ee7b7&fire=fbbf24&currStreakNum=6ee7b7&sideNums=818cf8&currStreakLabel=6ee7b7&sideLabels=8b8b99&dates=8b8b99"/>
+![Visitors](https://komarev.com/ghpvc/?username=Anthony-Faria-dos-santos&color=6ee7b7&style=flat&label=Visiteurs)
 
-<br><br>
-
-![Visitors](https://komarev.com/ghpvc/?username=Anthony-Faria-dos-santos&color=6ee7b7&style=flat-square&label=Visiteurs)
-
-**[Voir le portfolio complet](https://afds-wine.vercel.app/)**
+**[Voir le portfolio complet →](https://afds-wine.vercel.app/)**
 
 </div>

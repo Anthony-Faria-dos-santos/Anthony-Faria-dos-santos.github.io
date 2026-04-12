@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
+  <text x="400" y="30" font-family="monospace" font-size="14" fill="#64748b" text-anchor="middle" letter-spacing="2">TECHNICAL_STACK</text>
+  <rect x="40" y="60" width="720" height="50" rx="8" fill="#161b27" stroke="#6ee7b7" stroke-width="1" opacity="0.9"/>
+  <text x="60" y="90" font-family="monospace" font-size="12" fill="#6ee7b7">Cybersécurité</text>
+  <text x="180" y="90" font-family="monospace" font-size="12" fill="#94a3b8">| Linux · Kali · Suricata · Wireshark · ELK · MISP · TheHive</text>
+  <rect x="40" y="130" width="720" height="50" rx="8" fill="#161b27" stroke="#818cf8" stroke-width="1" opacity="0.9"/>
+  <text x="60" y="160" font-family="monospace" font-size="12" fill="#818cf8">Développement</text>
+  <text x="180" y="160" font-family="monospace" font-size="12" fill="#94a3b8">| TypeScript · React · Next.js · Node.js · Prisma · Docker</text>
+  <rect x="40" y="200" width="720" height="50" rx="8" fill="#161b27" stroke="#fbbf24" stroke-width="1" opacity="0.9"/>
+  <text x="60" y="230" font-family="monospace" font-size="12" fill="#fbbf24">Sys &amp; Réseaux</text>
+  <text x="180" y="230" font-family="monospace" font-size="12" fill="#94a3b8">| Bash · Git · Cisco IOS · Containerlab · GNS3</text>
+</svg>

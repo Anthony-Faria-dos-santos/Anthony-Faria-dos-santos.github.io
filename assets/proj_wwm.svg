@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 120" width="390" height="120">
+  <rect x="5" y="5" width="380" height="110" rx="8" fill="#161b27" stroke="#fbbf24" stroke-width="1" opacity="0.9"/>
+  <text x="20" y="30" font-family="monospace" font-size="14" fill="#f1f5f9" font-weight="bold">🟡 WWM Calculator</text>
+  <text x="20" y="50" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Projet fin de formation CI/CD.</text>
+  <text x="20" y="65" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">18 400 lignes, 412 tests de couverture.</text>
+  <text x="20" y="95" font-family="monospace" font-size="10" fill="#fbbf24">#TypeScript #Next.js #Jest</text>
+</svg>

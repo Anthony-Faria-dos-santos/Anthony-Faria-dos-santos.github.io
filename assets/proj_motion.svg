@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 120" width="390" height="120">
+  <rect x="5" y="5" width="380" height="110" rx="8" fill="#161b27" stroke="#64748b" stroke-width="1" opacity="0.9"/>
+  <text x="20" y="30" font-family="monospace" font-size="14" fill="#f1f5f9" font-weight="bold">⚪ Motion Detection</text>
+  <text x="20" y="50" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Pipeline Computer Vision (MOG2 → YOLO).</text>
+  <text x="20" y="65" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Système de détection et tracking pur.</text>
+  <text x="20" y="95" font-family="monospace" font-size="10" fill="#64748b">#Python #YOLOv8 #DeepSORT</text>
+</svg>

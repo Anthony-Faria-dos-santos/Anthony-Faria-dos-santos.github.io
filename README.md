@@ -3,7 +3,7 @@
 <!-- HEADER -->
 
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:0a1628,100:0d1117&section=header&text=Anthony%20Faria%20Dos%20Santos&fontSize=42&fontColor=6ee7b7&fontAlignY=38&animation=twinkling&desc=Fullstack%20JS%20%7C%20Cybers%C3%A9curit%C3%A9%20%7C%20ESIEE-IT%202026&descSize=16&descAlignY=58&descColor=94a3b8&stroke=6ee7b7&strokeWidth=1"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:0a1628,100:0d1117&section=header&text=Anthony%20Faria%20Dos%20Santos&fontSize=42&fontColor=6ee7b7&fontAlignY=38&animation=twinkling&desc=Alternant%20Fullstack%20JS%20%7C%20Cybers%C3%A9curit%C3%A9%20%7C%20R%C3%A9seaux%202026&descSize=15&descAlignY=58&descColor=94a3b8&stroke=6ee7b7&strokeWidth=1"/>
 </div>
 
 
@@ -65,6 +65,10 @@
 [![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Anthony-Faria-dos-santos&theme=tokyonight)](https://github.com/Anthony-Faria-dos-santos)
 <br>
 <br>
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0d1117,50:0a1628,100:0d1117&section=footer&text=anthony-faria-dos-santos%20·%20open%20to%20work&fontSize=22&fontColor=6ee7b7&fontAlignY=62&stroke=6ee7b7&strokeWidth=1"/>
+<BR>
+
 ![Visitors](https://komarev.com/ghpvc/?username=Anthony-Faria-dos-santos&color=6ee7b7&style=flat&label=Visiteurs)
 
 </div>

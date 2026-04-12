@@ -32,10 +32,12 @@
 
 <!-- CERTIFICATIONS & TIMELINE -->
 <img src="./assets/certs.svg" alt="Certifications" />
-
-<img src="https://raw.githubusercontent.com/Anthony-Faria-dos-santos/Anthony-Faria-dos-santos.github.io/main/assets/timeline.svg" alt="Parcours" />
+<h3 align="center" style="font-family: monospace; color: #64748b; letter-spacing: 2px;">PARCOURS</h3>
+<img src="./assets/timeline.svg" alt="Timeline parcours"/>
 
 <br><br>
+
+
 
 <!-- STATS GITHUB (Theme Tokyonight) -->
 [![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anthony-Faria-dos-santos&theme=tokyonight)](https://github.com/Anthony-Faria-dos-santos)

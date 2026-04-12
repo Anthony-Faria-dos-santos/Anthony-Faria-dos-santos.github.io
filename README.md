@@ -18,13 +18,13 @@
 &nbsp;
 [![Alternance](https://img.shields.io/badge/📩%20Alternance-Sept%202026-f87171?style=flat&labelColor=0d1117&color=f87171)](https://afds-wine.vercel.app/#contact)
 
+
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anthony-Faria-dos-santos/Anthony-Faria-dos-santos/output/github-contribution-grid-snake-dark.svg"/>
   <img src="https://raw.githubusercontent.com/Anthony-Faria-dos-santos/Anthony-Faria-dos-santos/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
 </div>
-
 
 <div align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anthony-Faria-dos-santos&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=6ee7b7&line=818cf8&point=6ee7b7&days=30" width="100%"/>

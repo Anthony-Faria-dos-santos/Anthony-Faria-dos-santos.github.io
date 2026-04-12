@@ -20,6 +20,10 @@
 
 </div>
 
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anthony-Faria-dos-santos&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=6ee7b7&line=818cf8&point=6ee7b7&interval=month" width="100%"/>
+</div>
+
 <br>
 
 <!-- A PROPOS & STACK -->
